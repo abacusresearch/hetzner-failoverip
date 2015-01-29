@@ -17,6 +17,7 @@ failover_ip = ARGV[0]
 destination_ip = ARGV[1]
 
 print "running ./failover.rb " + failover_ip + " " + destination_ip + "\n"
+print "using credentials: " + ENV['HBC_ROBOT_USER'] + "/" + ENV['HBC_ROBOT_PASSWORD'] + "\n"
 @api = Hetzner::API.new(ENV['HBC_ROBOT_USER'], ENV['HBC_ROBOT_PASSWORD'])
 
 result = @api.failover? failover_ip
