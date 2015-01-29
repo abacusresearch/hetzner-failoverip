@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hetzner-api (1.1.0)
+      httparty (~> 0.10.0)
+      json
+      thor
+      xml-simple
+    httparty (0.10.2)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    json (1.8.2)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    thor (0.19.1)
+    xml-simple (1.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  hetzner-api
